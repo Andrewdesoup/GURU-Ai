@@ -6,20 +6,11 @@ import fs from 'fs'
 import dotenv from 'dotenv'
 dotenv.config()
 
-const ownervb = process.env.OWNERS || "917605902011;GURU;6281255369012;Ash"
-
-
-const ownerlist = ownervb.split(';');
-
-global.owner = [];
-for (let i = 0; i < ownerlist.length; i += 2) {
-    const owner = [
-        ownerlist[i],            
-        ownerlist[i + 1],         
-        true                        
-    ];
-    global.owner.push(owner);
-}
+global.owner = [
+  ['233592098519', 'praveen', true],
+  ['233592098519', 'nimsara', true],
+  ['']  
+}//Number of owners
 
 //global.pairingNumber = "" //put your bot number here
 
